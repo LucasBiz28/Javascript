@@ -95,8 +95,8 @@ function cartesiano() {
 //exercicio 11
 function acidentes() {
     let dias_sem_acidentes = Number(prompt("Quantos dias sem acidentes?"))
-    let Anos = Math.floor(dias_sem_acidentes / 360)
-    let Mes = Math.floor((dias_sem_acidentes % 360) / 30)
+    let Anos = Number(dias_sem_acidentes / 360)
+    let Mes = Number((dias_sem_acidentes % 360) / 30)
     let Dias = Number(dias_sem_acidentes % 360) % 30;
     alert("A empresa está atualmente " + Anos + " anos " + Mes + " meses e " + Dias + " dias sem acidentes!")
 }
@@ -142,7 +142,7 @@ function algoritmo() {
     let queijo = 0.050 * 2;
     let presunto = 0.050;
     let hamburguer = 0.100;
-    let calculoQ = sanduiches * queijo 
+    let calculoQ = sanduiches * queijo
     let calculoP = sanduiches * presunto
     let calculoH = hamburguer * sanduiches
     alert("Para fazer essa quantidade de sanduiches você precisa comprar: "
@@ -150,7 +150,85 @@ function algoritmo() {
         + calculoP + " kg de presunto, "
         + calculoH + "kg de hambúrguer");
 }
+//exercicio 17
+function celsius() {
+    let grausCelsius = Number(prompt("Informe a temperatura em graus celsius."))
+    let calculo = Number((grausCelsius * 1.8) + 32)
+    alert(calculo + " graus fahrenheit")
+}
 
+//exercicio 18
+function salario() {
+    let horaNormal = 10
+    let horaExtra = 15
+    let horasN = Number(prompt("Quantas horas normais você trabalhou?"))
+    let horasE = Number(prompt("Quanta horas extras você trabalhou ?"))
+    let calculo = Number(horasN * horaNormal + horasE * horaExtra)
+    let calculo2 = Number(calculo * 0.90)
+    alert("Seu salário bruto é: R$ " + calculo + ", seu salario salário líquido é: R$ " + calculo2)
+}
+
+//exercicio 19
+function frango() {
+    let qntFrangos = prompt("Quantos frangos você tem na granja ?")
+    let chipIdentificação = 4
+    let anelAlimento = 7
+    let calculo = (qntFrangos * chipIdentificação) + (qntFrangos * anelAlimento)
+    alert("O gasto total para você marcar todos os seus frangos é: R$ " + calculo)
+}
+
+//exercicio 20
+function blusas() {
+    let blusasProduzidas = Number(prompt("Informe a quantidade de blusas produzidas:"))
+    let novelosDeLã = Number(prompt("Informe a quantidade de novelos de lã utilizados"))
+    let novelosPorBlusa = (novelosDeLã / blusasProduzidas)
+    alert("Você gasta " + novelosPorBlusa + " novelos de lã para produzir uma blusa")
+}
+
+//exercicio21
+function meia_cola() {
+    let refrilata = prompt("Quantas latas você comprou ?")
+    let refri600 = prompt("Quantas garrafas 600ml você comprou ?")
+    let refri2l = prompt("Quantas garafas 2l você comprou")
+    let lata = 0.350
+    let garrafa600 = 0.600
+    let garrafa = 2
+    let calculo = Number(refrilata * lata) + (refri600 * garrafa600) + (refri2l * garrafa)
+    alert("Você comprou " + calculo + " litros de Meia-Cola.")
+}
+
+//exercicio22
+function cofrinho() {
+    let centavo1 = prompt("Quantas moédas de 1 centavo você tem?")
+    let centavo5 = prompt("Quantas moédas de 5 centavo você tem?")
+    let centavo10 = prompt("Quantas moédas de 10 centavo você tem?")
+    let centavo25 = prompt("Quantas moédas de 25 centavo você tem?")
+    let centavo50 = prompt("Quantas moédas de 50 centavo você tem?")
+    let real1 = prompt("Quantas moédas de 1 real você tem?")
+    let cent1 = 0.01
+    let cent5 = 0.05
+    let cent10 = 0.10
+    let cent25 = 0.25
+    let cent50 = 0.50
+    let reall1 = 1
+    let calculo = (centavo1 * cent1) + (centavo5 * cent5) + (centavo10 * cent10) + (centavo25 * cent25) + (centavo50 * cent50) + (real1 * reall1)
+    alert("Você conseguiu economizar R$ " + calculo)
+}
+
+//exercicio23
+function predio() {
+    let alturaPessoa = prompt("Qual sua altura ?")
+    let sombraPessoa = prompt("Qual o tamanho da sua sombra ?")
+    let sombraPredio = prompt("Qual o tamanho da sombra do prédio ?")
+    let calculo = ((alturaPessoa * sombraPredio) / sombraPessoa)
+    alert("A altura do prédio é de: " + calculo + " metros")
+}
+
+//exercicio24
+function refresco() {
+
+
+}
 
 
 
