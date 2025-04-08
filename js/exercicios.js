@@ -226,7 +226,120 @@ function predio() {
 
 //exercicio24
 function refresco() {
+    var QntLrefresco = prompt("Quantos litros de regresco você deseja fazer ?")
+    const partesDeagua = 8;
+    const partesDesuco = 2;
+    const totalPartes = partesDeagua + partesDesuco
+    const Lagua = (partesDeagua / totalPartes) * QntLrefresco
+    const Lsuco = (partesDesuco / totalPartes) * QntLrefresco
+    alert("Para fazer " + QntLrefresco + " litros de refresco, você precisa de " + Lagua + " litros de água e " + Lsuco + " litros de suco.")
+}
 
+
+//exercicio25
+function caixa() {
+    var raioDaBase = prompt("Qual o raio da caixa d'gua")
+    var altura = prompt("Qual a altura da caixa d'água")
+    const pi = 3.141
+    const volume = pi * Math.pow(raioDaBase, 2) * 2
+    alert(" O volume da caixa d'água é " + volume.toFixed(2) + " litros.")
+}
+
+//exercicio26
+function multiplicação() {
+    var numero1 = prompt("Qual o primeiro número?")
+    var numero2 = prompt("Qual o segundo número?")
+    var numero3 = prompt("Qual o terceiro número?")
+    const calculo = numero1 * numero2 * numero3
+    alert("O resultado da multiplicação destes três números é " + calculo + ".")
+}
+
+//exercicio27
+function divisão() {
+    var numero1 = prompt("Qual o primeiro número?")
+
+    do {
+        var numero2 = parseFloat(prompt("Qual o segundo número? (O numero deve ser maior que 0!"))
+        if (numero2 === 0) {
+            alert("O número não pode ser zero. Tente novamente!")
+        }
+    } while (numero2 === 0)
+    const calculo = numero1 / numero2
+    alert("O resultado da divisão do primeiro número escolhido pelo segundo numero escolhido é " + calculo + ".")
+}
+
+//exercicio28
+function mediaPonderada() {
+    var nota1 = prompt("Nota 1:");
+    var nota2 = prompt("Nota 2:");
+    let peso2 = 2, peso3 = 3;
+    const calculo = (nota1 * peso2 + nota2 * peso3) / (peso2 + peso3);
+    alert("Sua média é: " + calculo + ".")
+}
+
+//exercicio29
+function produto() {
+var preçoProduto = prompt("Qual o preço do produto?")
+const calculo = preçoProduto *0.9
+alert ("O valor do produto após aplicar os 10% de desconto é R$ "+calculo.toFixed(2))
+}
+
+//exercicio30
+function comissao() {
+const salarioFixo = Number (prompt("Qual o valor do seu salário fixo ?"))
+const ValorDasVendas = Number (prompt("Qual o valor das suas vendas ?"))
+var calculo = Number (ValorDasVendas *0.04)
+var calculo2 =Number (calculo + salarioFixo)
+alert ("Sua comissão é R$ "+calculo.toFixed(2)+" e o seu salário mais a comissão é R$ "+calculo2.toFixed(2))
+}
+
+//exercicio31
+function peso() {
+
+}
+
+//exercicio32
+function gramas() {
+
+}
+
+//exercicio33
+function trapezio() {
+
+}
+
+//exercicio34
+function quadrado() {
+
+}
+
+//exercicio35
+function losango() {
+
+}
+
+//exercicio36
+function salario() {
+
+}
+
+//exercicio37
+function tabuada() {
+
+}
+
+//exercicio38
+function algoritmo() {
+
+}
+
+//exercicio39
+function contas() {
+
+}
+
+//exercicio40
+function catetos() {
 
 }
 
